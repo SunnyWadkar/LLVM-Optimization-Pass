@@ -27,6 +27,6 @@ opt -mem2reg constfold.bc -o constfold-m2r.bc**
 
 
 To run the pass, run the following command:  
-**opt -load ./LocalOpts/LocalOpts.so -local-opts algebraic-m2r.bc -o out  
-opt -load ./LocalOpts.so -local-opts strength-m2r.bc -o out  
-opt -load ./LocalOpts.so -local-opts constfold-m2r.bc -o out**  
+**1) opt -load ./LocalOpts/LocalOpts.so -local-opts algebraic-m2r.bc -o out  
+2) opt -load ./LocalOpts.so -local-opts strength-m2r.bc -o out**  
+**3) opt -load ./LocalOpts.so -local-opts constfold-m2r.bc -o out**  
